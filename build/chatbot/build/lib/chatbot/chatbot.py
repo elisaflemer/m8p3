@@ -27,7 +27,7 @@ class ValletNode(Node):
             r"\b(?:[Oo][Ii]|ol[áa]|o[láa]|oii|oie)\b|\b(?:(?:[Bb]o[am])\s(tarde|dia|noite))": "greetings",
             r"\b(?:[Tt]udo)?\s?(?:(?:[bB]em)|(?:[bB]ão)|(?:[fF]irme)|(?:em\sriba))\?": "genki",
             r"\b(?:[Tt]chau|[Aa]deus|[Ff]ui|[Ss]air|[Ee]ncerrar|[Pp]arar|[Dd]esligar|[Ff]inalizar|[Ee]ncerrar|[Ee]ncerar|[Ee]ncerr)": "bye",
-            r"\b(ir para|me leve até|vai para|vai pra|vamos pra)\s+(\w+)": "go_to",
+            r"\b(ir\s+para|me\s+leve\s+até|vai\s+para|vai\s+pra|vamos\s+pra)\s+(\w+)": "go_to",
         }
 
         self.action_dict = {
