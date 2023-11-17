@@ -41,3 +41,7 @@ Esta ponderada tem como objetivo a criação de um chatbot simples em Python bas
     ```
 
 Isso é tudo! Agora, o nó ROS 2 deve estar em execução.
+
+## Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>

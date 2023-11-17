@@ -39,26 +39,25 @@ class ValletNode(Node):
 
         self.get_logger().info("Vallet ROS 2 Node has been initialized.")
 
-    def greet_back(self):
-        self.get_logger().info("Olá, eu sou o Vallet, o robô inteligente da cervejaria do futuro!")
+    def greet_back(self, _):
+        print("Olá, eu sou o Vallet, o robô inteligente da cervejaria do futuro!")
 
-    def genki_back(self):
-        self.get_logger().info("Comigo está tudo bem!")
+    def genki_back(self, _):
+        print("Comigo está tudo bem!")
 
-    def bye(self):
-        self.get_logger().info("Tchau, até mais!")
+    def bye(self, _):
+        print("Tchau, até mais!")
         rclpy.shutdown()
         exit()
 
-    def go_to(self):
-        command = input("Digite o seu comando: ")
+    def go_to(self, command):
         for key, value in self.destinos.items():
             pattern = re.compile(key)
             groups = pattern.findall(command)
             if groups:
-                self.get_logger().info(f"OK, indo para {value}, em {self.coordenadas[value]}")
+                print(f"OK, indo para {value}, em {self.coordenadas[value]}")
                 return
-        self.get_logger().info("Não sei onde fica esse lugar")
+        print("Não sei onde fica esse lugar")
 
     def run(self):
         while rclpy.ok():
@@ -67,10 +66,10 @@ class ValletNode(Node):
                 pattern = re.compile(key)
                 groups = pattern.findall(command)
                 if groups:
-                    self.action_dict[value]()
+                    self.action_dict[value](command)
                     break
             else:
-                self.get_logger().info("Não entendi o que você quis dizer")
+                print("Não entendi o que você quis dizer")
 
             print()
 
