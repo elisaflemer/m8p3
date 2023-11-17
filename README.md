@@ -13,9 +13,9 @@ Esta ponderada tem como objetivo a criação de um chatbot simples em Python bas
 2. Navegue até o diretório do repositório:
 
     ```bash
-    cd sm3p8
+    cd m8p3
     ```
-
+/demo.webm
 3. Construa o workspace ROS 2:
 
     ```bash
@@ -43,6 +43,8 @@ Esta ponderada tem como objetivo a criação de um chatbot simples em Python bas
 Isso é tudo! Agora, o nó ROS 2 deve estar em execução.
 
 ## Demo
+
+https://github.com/elisaflemer/m8p3/blob/main/demo.webm
 
 <video width="320" height="240" controls>
   <source src="https://github.com/elisaflemer/m8p3/blob/main/demo.webm?raw=true" type="video/webm">
