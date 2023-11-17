@@ -45,5 +45,5 @@ Isso é tudo! Agora, o nó ROS 2 deve estar em execução.
 ## Demo
 
 <video width="320" height="240" controls>
-  <source src="https://github.com/elisaflemer/m8p3/blob/main/demo.webm" type="video/webm">
+  <source src="https://github.com/elisaflemer/m8p3/blob/main/demo.webm?raw=true" type="video/webm">
 </video>
